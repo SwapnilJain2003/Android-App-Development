@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#D70F64">
+
+    <ImageView
+        android:id="@+id/imgFoodLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/food_app_logo"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/imgFoodLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints="0000000000"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingStart="30dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints="Password"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="30dp"
+        android:textColorHint="@color/black"
+        tools:ignore="RtlSymmetry"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#880e4f"
+        android:padding="6dp"
+        android:text="@string/log_in"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="@string/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:lines="1"
+        android:layout_marginBottom="0dp"/>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_below="@id/txtForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up_now"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:padding="6dp"
+        android:lines="1"/>
+</RelativeLayout>
